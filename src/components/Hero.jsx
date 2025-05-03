@@ -21,10 +21,10 @@ const Hero = () => {
                     </div>
                     <div className="bg-white w-full py-4 mb-3 lg:mb-0">
                         <span className="flex gap-6 justify-center">
-                            <a className="text-xl" href="https://www.instagram.com/xandoalka" target="_blank"><FaInstagram /></a>
-                            <a className="text-lg" href="https://www.instagram.com/xandoalka" target="_blank"><FaTiktok /></a>
-                            <a className="text-lg" href="https://www.instagram.com/xandoalka" target="_blank"><FaXTwitter /></a>
-                            <a className="text-lg" href="https://www.instagram.com/xandoalka" target="_blank"><FaThreads /></a>
+                            <a className="text-xl" href="https://www.instagram.com/yxycnd" target="_blank"><FaInstagram /></a>
+                            <a className="text-lg" href="https://www.tiktok.com/@minunarlert" target="_blank"><FaTiktok /></a>
+                            <a className="text-lg" href="https://www.twitter.com/" target="_blank"><FaXTwitter /></a>
+                            <a className="text-xl" href="https://www.threads.com/yxycnd" target="_blank"><FaThreads /></a>
                         </span>
                     </div>
                 </div>
