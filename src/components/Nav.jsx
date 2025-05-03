@@ -17,8 +17,8 @@ const Nav = () => {
       <div className="lg:w-11/12 py-6 px-5 lg:py-0 lg:px-0 w-full lg:m-auto flex justify-between">
         <span className="flex items-center flex-wrap max-w-xs lg:max-w-none">
           <span className="h-4 w-4  bg-[#0050ff]"></span>
-          <h2 className="ml-2 lg:text-2xl text-xl font-bold">Xando Alka </h2>
-          <p className="xl:ml-2 lg:text-base text-sm font-light tracking-wide uppercase font-montserrat"><span className="hidden xl:inline">/</span> Frontend Developer</p>
+          <h2 className="ml-2 lg:text-2xl text-xl font-bold">Sri Mulyani </h2>
+          <p className="xl:ml-2 lg:text-base text-sm font-light tracking-wide uppercase font-montserrat"><span className="hidden xl:inline">/</span> Freelance Digital Worker</p>
         </span>
         <button onClick={handleButtonClick} className="flex z-10 lg:hidden flex-col justify-center w-10 cursor-pointer">
           <div className={`bg-[#0050ff] rounded-lg h-1 mb-1.5 transition-all duration-300 ${isChecked ? 'w-1/2 transform rotate-45 translate-x-1 translate-y-1 bg-black' : 'w-1/2'}`}></div>
