@@ -5,10 +5,10 @@ const ProjectCard = ({ projectTitle, roleTitle, projectDescription, projectImg, 
         <div className="w-full bg-white flex flex-col lg:flex-row shadow-[-12px_12px_25px_0_rgba(138,131,124,0.23)]">
             <div className=" w-full lg:w-[57.5%] py-4 min-h-72 lg:py-20 flex">
 
-                <div className="h-12 w-[2.5%] bg-[#0050ff]"></div>
+                <div className="h-12 w-[2.5%] bg-secondary"></div>
 
                 <div className="px-6 lg:w-[97.5%]">
-                    <h1 className="text-xl text-[#0050ff] font-bold">{projectTitle}</h1>
+                    <h1 className="text-xl text-secondary font-bold">{projectTitle}</h1>
                     <h2 className="text-sm font-semibold font-montserrat">{roleTitle}</h2>
 
                     <p className="mt-4 lg:mt-10 font-montserrat text-sm leading-relaxed">{projectDescription}</p>

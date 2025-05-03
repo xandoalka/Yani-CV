@@ -5,29 +5,45 @@ const ProfesionalCard = () => {
                 <h2 className='text-2xl font-bold'>Professional skillset</h2>
                 <ul className='mt-8 capitalize flex flex-wrap gap-x-16 gap-y-7 text-sm font-light font-montserrat'>
                     <li className='flex items-center w-52'>
-                        <span className="h-3 w-3 bg-[#0050ff]"></span>
-                        <p className='ml-2'>problem solving</p>
+                        <span className="h-3 w-3 bg-secondary"></span>
+                        <p className='ml-2'>Communicative</p>
                     </li>
                     <li className='flex items-center w-52'>
-                        <span className="h-3 w-3 bg-[#0050ff]"></span>
-                        <p className='ml-2'>Entrepreneurial Mindset</p>
+                        <span className="h-3 w-3 bg-secondary"></span>
+                        <p className='ml-2'>Creative & Innovative</p>
                     </li>
                     <li className='flex items-center w-52'>
-                        <span className="h-3 w-3 bg-[#0050ff]"></span>
+                        <span className="h-3 w-3 bg-secondary"></span>
                         <p className='ml-2'>Teamwork & Collaboration</p>
+                    </li>
+                    <li className='flex items-center w-52'>
+                        <span className="h-3 w-3 bg-secondary"></span>
+                        <p className='ml-2'>Time Management</p>
+                    </li>
+                    <li className='flex items-center w-52'>
+                        <span className="h-3 w-3 bg-secondary"></span>
+                        <p className='ml-2'>Nimble and responsible</p>
                     </li>
                 </ul>
             </div>
             <div className='mt-12 lg:mt-20'>
-                <h2 className='text-2xl font-bold'>Languages</h2>
-                <ul className='mt-8 flex flex-wrap gap-x-16 gap-y-7 text-sm font-light font-montserrat'>
+                <h2 className='text-2xl font-bold'>Freelance</h2>
+                <ul className='mt-8 capitalize flex flex-wrap gap-x-16 gap-y-7 text-sm font-light font-montserrat'>
                     <li className='flex items-center w-52'>
-                        <span className="h-3 w-3 bg-[#0050ff]"></span>
-                        <p className='ml-2'>Indonesia (native)</p>
+                        <span className="h-3 w-3 bg-secondary"></span>
+                        <p className='ml-2'>Visual Design</p>
                     </li>
                     <li className='flex items-center w-52'>
-                        <span className="h-3 w-3 bg-[#0050ff]"></span>
-                        <p className='ml-2'>English (less fluent)</p>
+                        <span className="h-3 w-3 bg-secondary"></span>
+                        <p className='ml-2'>Commission Art</p>
+                    </li>
+                    <li className='flex items-center w-52'>
+                        <span className="h-3 w-3 bg-secondary"></span>
+                        <p className='ml-2'>Essay Writing</p>
+                    </li>
+                    <li className='flex items-center w-52'>
+                        <span className="h-3 w-3 bg-secondary"></span>
+                        <p className='ml-2'>novel & short story writing</p>
                     </li>
                 </ul>
             </div>

@@ -10,12 +10,12 @@ const Projects = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 1.2 }}
-      className='bg-[#e6dace] min-h-screen mt-24 lg:mt-28'
+      className='bg-primary min-h-screen mt-24 lg:mt-28'
     >
       <div className='flex flex-col items-center py-20 w-11/12 lg:w-1/2 mx-auto'>
 
         <span className='flex items-center'>
-          <span className="h-4 w-4 bg-[#0050ff]"></span>
+          <span className="h-4 w-4 bg-secondary"></span>
           <h1 className='ml-2 text-4xl font-bold'>Projects</h1>
         </span>
 

@@ -1,5 +1,5 @@
-import { FaInstagram, FaTiktok } from "react-icons/fa"
-import { FaThreads, FaXTwitter } from "react-icons/fa6";
+import { FaDiscord, FaInstagram, FaTiktok } from "react-icons/fa"
+import { FaThreads } from "react-icons/fa6";
 
 const Footer = () => {
 
@@ -22,7 +22,7 @@ const Footer = () => {
                         <span className="flex gap-4">
                             <a className="text-2xl lg:text-base" href="https://www.instagram.com/yxycnd" target="_blank"><FaInstagram /></a>
                             <a className="text-2xl lg:text-base" href="https://www.tiktok.com/@minunarlert" target="_blank"><FaTiktok /></a>
-                            <a className="text-2xl lg:text-base" href="https://www.twitter.com/" target="_blank"><FaXTwitter /></a>
+                            <a className="text-2xl lg:text-base" href="https://discord.gg/W9GHU6vs" target="_blank"><FaDiscord /></a>
                             <a className="text-2xl lg:text-base" href="https://www.threads.com/yxycnd" target="_blank"><FaThreads /></a>
                         </span>
                     </div>
