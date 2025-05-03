@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="order-1 lg:order-2 flex flex-wrap items-center gap-6 lg:gap-8 lg:text-center">
                     <div className="flex flex-col gap-2">
                         <p className="font-semibold">Call</p>
-                        <a href="tel:+628381073409">0838-1073-409</a>
+                        <a href="https://wa.me/+628381073409">0838-1073-409</a>
                     </div>
                     <div className="flex flex-col gap-2">
                         <p className="font-semibold">Write</p>
