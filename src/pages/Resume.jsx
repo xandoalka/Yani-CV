@@ -21,7 +21,7 @@ const Resume = () => {
         </span>
 
          <section className='mt-20 w-full flex flex-col gap-10 lg:gap-14'>
-          <div className='flex justify-between'>
+          <div className='flex justify-between items-center'>
             <h2 className='text-2xl font-bold'>Work Experience</h2>
             <a className="w-40 text-center uppercase text-sm font-semibold font-montserrat py-2 border border-secondary bg-secondary rounded-3xl text-white transition-all duration-200 ease-linear hover:bg-white hover:text-secondary" href="#">Download CV</a>
           </div>
