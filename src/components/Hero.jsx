@@ -29,15 +29,15 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className="lg:w-3/5 w-full pt-[22rem] lg:pt-12 pl-10 pr-4 pb-10 lg:pr-0 lg:pb-0 lg:pl-12 flex flex-col gap-6 bg-[#e6dace] lg:bg-white">
-                    <h1 className="lg:text-8xl text-5xl font-bold">Hello</h1>
+                    <h1 className="lg:text-8xl text-5xl font-bold">Hi!</h1>
                     <h3 className="text-xl font-semibold font-montserrat">Here&#39;s who I am &amp; what I do</h3>
                     <span className="hidden lg:flex gap-2 font-medium uppercase text-sm mt-4 font-montserrat">
                         <Link to={"/resume"} className="w-32 text-center py-2 border border-[#0050ff] bg-[#0050ff] rounded-3xl text-white transition-all duration-200 ease-linear hover:bg-white hover:text-[#0050ff]" href="#">Resume</Link>
                         <Link to={"/projects"} className="w-32 text-center py-2 border border-black rounded-3xl transition-all duration-200 ease-linear hover:bg-[#0050ff] hover:border-[#0050ff] hover:text-white" href="#">Projects</Link>
                     </span>
                     <p className="max-w-96 lg:mt-4 tracking-wide leading-snug font-montserrat">
-                        I&#39;m Yani, I&#39;m a junior frontend developer known for my adept coding skills and innovative approach. With a natural talent for swiftly crafting clean and functional code, I&#39;m a rising star in the world of web development.</p>
-                    <p className="max-w-96 tracking-wide leading-snug font-montserrat">Passionate about pushing boundaries and creating seamless user experiences, I&#39;m poised to make a significant impact in the industry.</p>
+                        Aku Yani, seorang Freelancer Digital Worker dengan pengalaman di bidang desain, editing, dan berbagai proyek digital. Dikenal cepat beradaptasi dan selalu semangat belajar, aku menggabungkan kreativitas dan ketelitian dalam setiap pekerjaan.</p>
+                    <p className="max-w-96 tracking-wide leading-snug font-montserrat">Dari membuat desain visual hingga membantu proyek akademik dan digital, aku hadir sebagai sosok yang fleksibel, bisa diandalkan, dan terus berkembang.</p>
                 </div>
             </div>
         </main>
