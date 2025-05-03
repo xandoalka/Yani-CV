@@ -45,6 +45,10 @@ const ProfesionalCard = () => {
                         <span className="h-3 w-3 bg-secondary"></span>
                         <p className='ml-2'>novel & short story writing</p>
                     </li>
+                    <li className='flex items-center w-52'>
+                        <span className="h-3 w-3 bg-secondary"></span>
+                        <p className='ml-2'>photo editor</p>
+                    </li>
                 </ul>
             </div>
         </div>
