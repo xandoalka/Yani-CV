@@ -29,9 +29,9 @@ const Resume = () => {
             <ResumeCard
               years="2024"
               schoolNameOrJobPosition="Cashier and Warehouse Checker"
-              majorOrCompanyName="Grocery Store"
+              majorOrCompanyName="Clarissa Grocery Store"
               location="Tangerang, Banten"
-              description="SMAN 26 Kabupaten Tangerang adalah sekolah menengah atas yang berkomitmen mencetak generasi beriman, cerdas, terampil, mandiri, dan berwawasan lingkungan."
+              description="Toko retail sembako yang melayani penjualan grosir dan eceran untuk berbagai kebutuhan rumah tangga maupun usaha. Melayani transaksi tunai dan non-tunai, serta menyediakan layanan pemesanan dan pengantaran barang ke pelanggan."
             ></ResumeCard>
 
          </section>
@@ -47,7 +47,7 @@ const Resume = () => {
             schoolNameOrJobPosition="SMAN 26 Kabupaten Tanggerang"
             majorOrCompanyName="Senior High School"
             location="Tangerang, Banten"
-            description="SMAN 26 Kabupaten Tangerang adalah sekolah menengah atas yang berkomitmen mencetak generasi beriman, cerdas, terampil, mandiri, dan berwawasan lingkungan."
+            description="Sekolah menengah atas terakreditasi A dan berstatus Sekolah Adiwiyata. Berkomitmen mencetak siswa yang beriman, cerdas, terampil, mandiri, dan peduli lingkungan."
           ></ResumeCard>
           </section>
 

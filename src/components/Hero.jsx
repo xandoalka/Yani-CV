@@ -37,7 +37,7 @@ const Hero = () => {
                     </span>
                     <p className="max-w-96 lg:mt-4 tracking-wide leading-snug font-montserrat">
                         Aku Yani, seorang Freelancer Digital Worker dengan pengalaman di bidang desain, editing, dan berbagai proyek digital. Dikenal cepat beradaptasi dan selalu semangat belajar, aku menggabungkan kreativitas dan ketelitian dalam setiap pekerjaan.</p>
-                    <p className="max-w-96 tracking-wide leading-snug font-montserrat">Dari membuat desain visual hingga membantu proyek akademik dan digital, aku hadir sebagai sosok yang fleksibel, bisa diandalkan, dan terus berkembang.</p>
+                    <p className="max-w-96 tracking-wide leading-snug font-montserrat">Dari membuat desain grafis hingga membantu proyek akademik dan digital, aku hadir sebagai sosok yang fleksibel, bisa diandalkan, dan terus berkembang.</p>
                 </div>
             </div>
         </main>

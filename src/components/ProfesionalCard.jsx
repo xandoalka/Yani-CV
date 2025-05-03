@@ -31,7 +31,7 @@ const ProfesionalCard = () => {
                 <ul className='mt-8 capitalize flex flex-wrap gap-x-16 gap-y-7 text-sm font-light font-montserrat'>
                     <li className='flex items-center w-52'>
                         <span className="h-3 w-3 bg-secondary"></span>
-                        <p className='ml-2'>Visual Design</p>
+                        <p className='ml-2'>graphic Design</p>
                     </li>
                     <li className='flex items-center w-52'>
                         <span className="h-3 w-3 bg-secondary"></span>
@@ -39,7 +39,7 @@ const ProfesionalCard = () => {
                     </li>
                     <li className='flex items-center w-52'>
                         <span className="h-3 w-3 bg-secondary"></span>
-                        <p className='ml-2'>Essay Writing</p>
+                        <p className='ml-2'>Paper Writing</p>
                     </li>
                     <li className='flex items-center w-52'>
                         <span className="h-3 w-3 bg-secondary"></span>
