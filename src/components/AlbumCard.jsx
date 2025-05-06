@@ -1,13 +1,85 @@
-export const AlbumCard = ({ Title , children, }) => {
-	return (
-		<div className="w-full bg-white py-10 px-6 lg:py-10 lg:px-12 shadow-[-12px_12px_25px_0_rgba(138,131,124,0.23)] flex flex-col items-center gap-4">
-			<span className="flex items-center gap-2 self-start">
-				<span className="h-4 w-4 bg-secondary"></span>
-				<h2 className="capitalize text-xl font-bold">{Title}</h2>
-			</span>
-         <div className="flex gap-2 w-full items-center overflow-x-auto lg:gap-4 snap-x">
-         {children}
-         </div>
-		</div>
-	);
+import { useEffect, useRef, useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
+export const AlbumCard = ({ Title, children, withControls = true}) => {
+  const scrollRef = useRef(null);
+  const [showLeft, setShowLeft] = useState(false);
+  const [showRight, setShowRight] = useState(false);
+
+  const checkScrollPosition = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const { scrollLeft, scrollWidth, clientWidth } = el;
+
+    setShowLeft(scrollLeft > 10); // toleransi 10px
+    setShowRight(scrollLeft + clientWidth < scrollWidth - 10);
+  };
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth } = scrollRef.current;
+      const scrollAmount = clientWidth * 0.8;
+      scrollRef.current.scrollTo({
+        left: direction === "left" ? scrollLeft - scrollAmount : scrollLeft + scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!withControls || !el) return;
+
+    checkScrollPosition();
+    el.addEventListener("scroll", checkScrollPosition);
+    window.addEventListener("resize", checkScrollPosition);
+
+    return () => {
+      el.removeEventListener("scroll", checkScrollPosition);
+      window.removeEventListener("resize", checkScrollPosition);
+    };
+  }, [withControls, children]);
+
+  useEffect(() => {
+    // initial check
+    if (withControls) checkScrollPosition();
+  }, [children, withControls]);
+  return (
+    <div className="w-full bg-white py-10 px-6 lg:py-10 lg:px-12 shadow-[-12px_12px_25px_0_rgba(138,131,124,0.23)] flex flex-col items-center gap-4">
+      <span className="flex items-center gap-2 self-start">
+        <span className="h-4 w-4 bg-secondary"></span>
+        <h2 className="capitalize text-xl font-bold">{Title}</h2>
+      </span>
+      <div className="relative w-full">
+        {/* Tombol kiri */}
+        {withControls && showLeft && (
+          <button
+            onClick={() => scroll("left")}
+            className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full p-2"
+          >
+            <FaChevronLeft/>
+          </button>
+        )}
+
+        {/* Kontainer foto */}
+        <div
+          ref={scrollRef}
+          className="flex gap-2 w-full items-center overflow-x-auto lg:gap-4 snap-x scroll-smooth scrollbar-hide px-10"
+        >
+          {children}
+        </div>
+
+        {/* Tombol kanan */}
+        {withControls && showRight && (
+          <button
+            onClick={() => scroll("right")}
+            className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 bg-white shadow-md rounded-full p-2"
+          >
+            <FaChevronRight/>
+          </button>
+        )}
+      </div>
+    </div>
+  );
 };
