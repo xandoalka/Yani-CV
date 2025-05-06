@@ -25,7 +25,7 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
         {withControls && (
           <button
             onClick={() => scroll("left")}
-            className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2 lg:hidden"
+            className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2 lg:hidden"
           >
             <FaChevronLeft className="text-white"/>
           </button>
@@ -43,7 +43,7 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
         {withControls && (
           <button
             onClick={() => scroll("right")}
-            className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2 lg:hidden"
+            className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2 lg:hidden"
           >
             <FaChevronRight className="text-white" />
           </button>
