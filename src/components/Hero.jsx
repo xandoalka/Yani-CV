@@ -33,7 +33,7 @@ const Hero = () => {
                     <h3 className="text-xl font-semibold font-montserrat">Here&#39;s who I am &amp; what I do</h3>
                     <span className="hidden lg:flex gap-2 font-medium uppercase text-sm mt-4 font-montserrat">
                         <Link to={"/resume"} className="w-32 text-center py-2 border border-tertiary bg-tertiary rounded-3xl text-white transition-all duration-200 ease-linear hover:bg-white hover:text-tertiary" href="#">Resume</Link>
-                        <Link to={"/projects"} className="w-32 text-center py-2 border border-black rounded-3xl transition-all duration-200 ease-linear hover:bg-tertiary hover:border-tertiary hover:text-white" href="#">Projects</Link>
+                        <Link to={"/portfolio"} className="w-32 text-center py-2 border border-black rounded-3xl transition-all duration-200 ease-linear hover:bg-tertiary hover:border-tertiary hover:text-white" href="#">Portfolio</Link>
                     </span>
                     <p className="max-w-96 lg:mt-4 tracking-wide leading-snug font-montserrat">
                         Aku Yani, seorang Freelancer Digital Worker dengan pengalaman di bidang desain, editing, dan berbagai proyek digital. Dikenal cepat beradaptasi dan selalu semangat belajar, aku menggabungkan kreativitas dan ketelitian dalam setiap pekerjaan.</p>
