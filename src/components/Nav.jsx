@@ -28,7 +28,7 @@ const Nav = () => {
         <ul className={`lg:flex lg:items-center gap-5 uppercase  text-sm  ${isChecked ? 'bg-white flex absolute flex-col gap-8 items-center justify-center w-full -ml-5 h-screen' : 'hidden'}`}>
           <li><Link to={"/"} className={`font-montserrat transition-all duration-200 ease-linear hover:text-tertiary ${location.pathname === '/' ? ' text-tertiary ' : ''}`} href="#">About Me</Link></li>
           <li><Link to={"/resume"} className={`font-montserrat transition-all duration-200 ease-linear hover:text-tertiary ${location.pathname === '/resume' ? 'text-tertiary' : ''}`} href="#">Resume</Link></li>
-          <li><Link to={"/projects"} className={`font-montserrat transition-all duration-200 ease-linear hover:text-tertiary ${location.pathname === '/projects' ? 'text-tertiary' : ''}`} href="#">Projects</Link></li>
+          <li><Link to={"/portfolio"} className={`font-montserrat transition-all duration-200 ease-linear hover:text-tertiary ${location.pathname === '/portfolio' ? 'text-tertiary' : ''}`} href="#">Portfolio</Link></li>
         </ul>
       </div>
     </nav>
