@@ -16,7 +16,7 @@ const Hero = () => {
                         <p className="hidden lg:flex tracking-widest w-3/4 text-center uppercase text-lg font-montserrat">Freelance Digital Worker</p>
                         <span className="flex lg:hidden justify-center w-11/12 mx-auto gap-2 font-medium uppercase mt-4 font-montserrat">
                             <Link to={"/resume"} className="w-36 text-center py-1.5 border border-tertiary bg-tertiary rounded-3xl text-white transition-all duration-200 ease-linear hover:bg-white hover:text-tertiary" href="#">Resume</Link>
-                            <Link to={"/projects"} className="w-36 text-center py-1.5 border border-black rounded-3xl transition-all duration-200 ease-linear hover:bg-tertiary hover:border-tertiary hover:text-white" href="#">Projects</Link>
+                            <Link to={"/portfolio"} className="w-36 text-center py-1.5 border border-black rounded-3xl transition-all duration-200 ease-linear hover:bg-tertiary hover:border-tertiary hover:text-white" href="#">Portfolio</Link>
                         </span>
                     </div>
                     <div className="bg-white w-full py-4 mb-3 lg:mb-0">
