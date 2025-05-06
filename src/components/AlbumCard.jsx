@@ -34,7 +34,7 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
         {/* Kontainer foto */}
         <div
           ref={scrollRef}
-          className="flex lg:scrollbar-auto gap-2 w-full items-center overflow-x-auto lg:gap-4 snap-x scroll-smooth scrollbar-hide px-10 lg:px-4"
+          className="flex lg:scrollbar-auto gap-2 w-full items-center overflow-x-auto lg:gap-4 snap-x snap-mandatory scroll-smooth scrollbar-hide px-10 lg:px-4"
         >
           {children}
         </div>
