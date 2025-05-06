@@ -52,11 +52,11 @@ const Blog = () => {
             <div className='lg:grid grid-cols-2 gap-4 place-items-center w-full'>
               <div className='flex flex-col items-center'>
                 <span className='text-center text-xl py-4 font-semibold'>Before</span>
-                <img className='object-cover w-80 h-96' src={before} alt="before" />
+                <img className='object-cover w-60 h-80' src={before} alt="before" />
               </div>
               <div className='flex flex-col items-center'>
                 <span className='text-center text-xl py-4 font-semibold'>After</span>
-                <img className='object-cover w-80 h-96' src={after} alt="after" />
+                <img className='object-cover w-60 h-80' src={after} alt="after" />
             </div>
             </div>
           </AlbumCard>
