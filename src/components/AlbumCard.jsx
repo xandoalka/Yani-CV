@@ -3,7 +3,6 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export const AlbumCard = ({ Title, children, withControls = true}) => {
   const scrollRef = useRef(null);
-  const [showControls, setShowControls] = useState(true);
 
   const scroll = (direction) => {
     if (scrollRef.current) {
@@ -15,19 +14,6 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
       });
     }
   };
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (!withControls || !el) {
-      setShowControls(false);
-      return;
-    }
-    const checkOverflow = () => {
-      setShowControls(el.scrollWidth > el.clientWidth);
-    };
-    checkOverflow();
-    window.addEventListener("resize", checkOverflow);
-    return () => window.removeEventListener("resize", checkOverflow);
-  }, [withControls, children]);
   return (
     <div className="w-full bg-white py-10 px-6 lg:py-10 lg:px-12 shadow-[-12px_12px_25px_0_rgba(138,131,124,0.23)] flex flex-col items-center gap-4">
       <span className="flex items-center gap-2 self-start">
@@ -36,7 +22,7 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
       </span>
       <div className="relative w-full">
         {/* Tombol kiri */}
-        {withControls && showControls && (
+        {withControls && (
           <button
             onClick={() => scroll("left")}
             className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2 lg:hidden"
@@ -54,7 +40,7 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
         </div>
 
         {/* Tombol kanan */}
-        {withControls && showControls && (
+        {withControls && (
           <button
             onClick={() => scroll("right")}
             className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2 lg:hidden"
