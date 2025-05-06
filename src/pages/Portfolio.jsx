@@ -41,11 +41,11 @@ const Blog = () => {
           <AlbumCard
             Title={"commission art"}
           >
-            <img className='object-cover w-80 snap-center' src={art1} alt="mata" />
-            <img className='object-cover w-80 snap-center' src={gambar1} alt="" />
-            <img className='object-cover w-80 snap-center' src={gambar2} alt="" />
-            <img className='object-cover w-80 snap-center' src={gambar3} alt="" />
-            <img className='object-cover w-80 snap-center' src={art2} alt="lengan" />
+            <img className='object-cover w-80 snap-center max-h-96' src={art1} alt="mata" />
+            <img className='object-cover w-80 snap-center max-h-96' src={gambar1} alt="" />
+            <img className='object-cover w-80 snap-center max-h-96' src={gambar2} alt="" />
+            <img className='object-cover w-80 snap-center max-h-96' src={gambar3} alt="" />
+            <img className='object-cover w-80 snap-center max-h-96' src={art2} alt="lengan" />
           </AlbumCard>
           <AlbumCard
             Title={"photo editing"} withControls={false}>
