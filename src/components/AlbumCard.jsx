@@ -12,14 +12,14 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
 
     const { scrollLeft, scrollWidth, clientWidth } = el;
 
-    setShowLeft(scrollLeft > 10); // toleransi 10px
-    setShowRight(scrollLeft + clientWidth < scrollWidth - 10);
+    setShowLeft(scrollLeft > 2); // Show left button if scrolled right
+    setShowRight(scrollLeft + clientWidth < scrollWidth - 2);
   };
 
   const scroll = (direction) => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
-      const scrollAmount = clientWidth * 0.8;
+      const scrollAmount = clientWidth * 1;
       scrollRef.current.scrollTo({
         left: direction === "left" ? scrollLeft - scrollAmount : scrollLeft + scrollAmount,
         behavior: "smooth",
