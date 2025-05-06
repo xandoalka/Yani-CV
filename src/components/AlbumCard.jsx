@@ -3,51 +3,48 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export const AlbumCard = ({ Title, children, withControls = true}) => {
   const scrollRef = useRef(null);
-  const [canScrollLeft, setCanScrollLeft] = useState(false);
-  const [canScrollRight, setCanScrollRight] = useState(false);
+  const [showLeft, setShowLeft] = useState(false);
+  const [showRight, setShowRight] = useState(true);
 
-  const updateScrollButtons = () => {
+  const checkScrollPosition = () => {
     const el = scrollRef.current;
     if (!el) return;
 
     const { scrollLeft, scrollWidth, clientWidth } = el;
 
-    setCanScrollLeft(scrollLeft > 0);
-    setCanScrollRight(scrollLeft + clientWidth < scrollWidth - 0);
+    setShowLeft(scrollLeft > 10);
+    setShowRight(scrollLeft + clientWidth < scrollWidth - 10);
   };
 
-  const scrollByAmount = (direction) => {
-    const el = scrollRef.current;
-    if (!el) return;
-  
-    const scrollDistance = el.clientWidth * 0.8; // 80% dari lebar tampilan
-    el.scrollBy({
-      left: direction === "left" ? -scrollDistance : scrollDistance,
-      behavior: "smooth",
-    });
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth } = scrollRef.current;
+      const scrollAmount = clientWidth * 1;
+      scrollRef.current.scrollTo({
+        left: direction === "left" ? scrollLeft - scrollAmount : scrollLeft + scrollAmount,
+        behavior: "smooth",
+      });
+    }
   };
 
   useEffect(() => {
     const el = scrollRef.current;
-    if (!el || !withControls) return;
+    if (!withControls || !el) return;
 
-    updateScrollButtons();
-
-    const onScroll = () => updateScrollButtons();
-    const onResize = () => updateScrollButtons();
-
-    el.addEventListener("scroll", onScroll);
-    window.addEventListener("resize", onResize);
+    checkScrollPosition();
+    el.addEventListener("scroll", checkScrollPosition);
+    window.addEventListener("resize", checkScrollPosition);
 
     return () => {
-      el.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onResize);
+      el.removeEventListener("scroll", checkScrollPosition);
+      window.removeEventListener("resize", checkScrollPosition);
     };
   }, [withControls, children]);
 
   useEffect(() => {
-    if (withControls) updateScrollButtons();
+    if (withControls) checkScrollPosition();
   }, [children, withControls]);
+  
   return (
     <div className="w-full bg-white py-10 px-6 lg:py-10 lg:px-12 shadow-[-12px_12px_25px_0_rgba(138,131,124,0.23)] flex flex-col items-center gap-4">
       <span className="flex items-center gap-2 self-start">
@@ -56,9 +53,9 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
       </span>
       <div className="relative w-full">
         {/* Tombol kiri */}
-        {withControls && canScrollLeft && (
+        {withControls && showLeft && (
           <button
-          onClick={() => scrollByAmount("left")}
+            onClick={() => scroll("left")}
             className="absolute -left-4 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2"
           >
             <FaChevronLeft className="text-white"/>
@@ -74,9 +71,9 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
         </div>
 
         {/* Tombol kanan */}
-        {withControls && canScrollRight && (
+        {withControls && showRight && (
           <button
-          onClick={() => scrollByAmount("right")}
+            onClick={() => scroll("right")}
             className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2"
           >
             <FaChevronRight className="text-white"/>

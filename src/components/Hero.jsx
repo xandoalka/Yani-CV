@@ -2,6 +2,7 @@ import { FaDiscord, FaInstagram, FaTiktok } from "react-icons/fa"
 import profile from "../assets/images/profile.jpeg"
 import { Link } from "react-router-dom"
 import { FaThreads} from "react-icons/fa6"
+import { SiWattpad } from "react-icons/si"
 
 const Hero = () => {
     return (
@@ -25,6 +26,7 @@ const Hero = () => {
                             <a className="text-lg" href="https://www.tiktok.com/@minunarlert" target="_blank"><FaTiktok /></a>
                             <a className="text-xl" href="https://discord.gg/W9GHU6vs" target="_blank"><FaDiscord /></a>
                             <a className="text-xl" href="https://www.threads.com/yxycnd" target="_blank"><FaThreads /></a>
+                            <a className="text-xl" href="https://www.threads.com/yxycnd" target="_blank"><SiWattpad /></a>
                         </span>
                     </div>
                 </div>

@@ -1,5 +1,6 @@
 import { FaDiscord, FaInstagram, FaTiktok } from "react-icons/fa"
 import { FaThreads } from "react-icons/fa6";
+import { SiWattpad } from "react-icons/si";
 
 const Footer = () => {
 
@@ -24,6 +25,7 @@ const Footer = () => {
                             <a className="text-2xl lg:text-base" href="https://www.tiktok.com/@minunarlert" target="_blank"><FaTiktok /></a>
                             <a className="text-2xl lg:text-base" href="https://discord.gg/W9GHU6vs" target="_blank"><FaDiscord /></a>
                             <a className="text-2xl lg:text-base" href="https://www.threads.com/yxycnd" target="_blank"><FaThreads /></a>
+                            <a className="text-2xl lg:text-base" href="https://www.threads.com/yxycnd" target="_blank"><SiWattpad /></a>
                         </span>
                     </div>
                 </div>
