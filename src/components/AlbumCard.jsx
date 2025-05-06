@@ -3,7 +3,7 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 export const AlbumCard = ({ Title, children, withControls = true}) => {
   const scrollRef = useRef(null);
-  const [showControls, setShowControls] = useState(false);
+  const [showControls, setShowControls] = useState(true);
 
   const scroll = (direction) => {
     if (scrollRef.current) {
