@@ -39,7 +39,7 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
         {withControls && showControls && (
           <button
             onClick={() => scroll("left")}
-            className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2"
+            className="absolute -left-5 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2 lg:hidden"
           >
             <FaChevronLeft className="text-white"/>
           </button>
@@ -48,7 +48,7 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
         {/* Kontainer foto */}
         <div
           ref={scrollRef}
-          className="flex gap-2 w-full items-center overflow-x-auto lg:gap-4 snap-x scroll-smooth scrollbar-hide px-10"
+          className="flex lg:scrollbar-auto gap-2 w-full items-center overflow-x-auto lg:gap-4 snap-x scroll-smooth scrollbar-hide px-10 lg:px-4"
         >
           {children}
         </div>
@@ -57,7 +57,7 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
         {withControls && showControls && (
           <button
             onClick={() => scroll("right")}
-            className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2"
+            className="absolute -right-5 top-1/2 -translate-y-1/2 z-10 bg-secondary shadow-md rounded-full p-2 lg:hidden"
           >
             <FaChevronRight className="text-white" />
           </button>
