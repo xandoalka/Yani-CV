@@ -12,8 +12,8 @@ export const AlbumCard = ({ Title, children, withControls = true}) => {
 
     const { scrollLeft, scrollWidth, clientWidth } = el;
 
-    setShowLeft(scrollLeft > 2); // Show left button if scrolled right
-    setShowRight(scrollLeft + clientWidth < scrollWidth - 2);
+    setShowLeft(scrollLeft > 0); // Show left button if scrolled right
+    setShowRight(scrollLeft + clientWidth < scrollWidth - 0);
   };
 
   const scroll = (direction) => {
